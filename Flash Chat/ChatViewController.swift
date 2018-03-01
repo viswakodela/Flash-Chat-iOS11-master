@@ -9,8 +9,9 @@
 import UIKit
 import Firebase
 import ChameleonFramework
+import AVFoundation
 
-class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,UITextFieldDelegate {
+class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
     
     
