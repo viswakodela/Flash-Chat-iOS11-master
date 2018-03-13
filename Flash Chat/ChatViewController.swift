@@ -120,6 +120,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     func textFieldDidBeginEditing(_ textField: UITextField) {
         
         UIView.animate(withDuration: 0.5) {
+            
             self.heightConstraint.constant = 318
             self.view.layoutIfNeeded()
         }
@@ -141,10 +142,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     
-    ///////////////////////////////////////////
     
-    
-    //MARK: - Send & Recieve from Firebase
     
     
     
@@ -154,7 +152,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         messageTextfield.endEditing(true)
         
-        //TODO: Send the message to Firebase and save it in our database
+        
         
         messageTextfield.isEnabled = false
         sendButton.isEnabled = false
@@ -211,7 +209,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBAction func logOutPressed(_ sender: AnyObject) {
         
-        //TODO: Log out the user and send them back to WelcomeViewController
+        
         do{
             try Auth.auth().signOut()
             
